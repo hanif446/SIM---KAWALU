@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+:root {
+    --bs-black: #383838;
+    --bs-navy: #1C4A5A;
+    --bs-blue: #1d3997;
+    --bs-purple: #3f1871;
+    --bs-yellow: #FFB057;
+    --bs-beige: #FFEEDB;
+    --bs-grey: #FAFAFA;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--bs-black);
+    background-color: var(--bs-grey);
+}
+
+.bg-grey {
+    background-color: #EDEDED;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /*box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);*/
+    padding: 15px 40px;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+    cursor: default;
+    display: flex;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 5px;
+}
+
+nav .logo h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    color: #1cc88a;
+    margin-left: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.before{
+    width: 30%;
+}
+
+.after{
+    width: 39%;
+}
+
+nav ul li a {
+    display: block;
+    padding-top: 7px;
+    color: #1cc88a;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: var(--bs-yellow);
+    transition: 0.2s ease-in;
+}
+
+.btn {
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-yellow-border {
+   border: 2px solid #1cc88a;
+}
+
+.btn-yellow-border:hover {
+    border: 2px solid var(--bs-yellow);
+}
+
+.jumbotron-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.jumbotron {
+    width: 100%;
+    height: 80vh;
+
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(310deg, #2dce89 0%, #2dcecc 100%);
+}
+
+.jumbotron h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    /*font-weight: normal;*/
+}
+
+.jumbotron p {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    padding: 0 30%;
+}
+
+main {
+    width: 100%;
+    background-color: var(--bs-grey);
+}
+
+.main-content {
+    padding: 30px 100px;
+}
+
+.flex-h {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    width: 50%;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+.intro-img {
+    width: 50%;
+    justify-content: right;
+}
+
+.img-container {
+    width: 250px;
+    height: 250px;
+    background-color: #D8D9CF;
+}
+
+.featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-evenly;
+}
+
+.card-visi {
+    width: 100%;
+    height: 150px;
+    padding: 30px 40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.1);
+    justify-content: space-evenly;
+}
+
+.card-misi {
+    width: 100%;
+    height: 300px;
+    padding: 30px 40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.1);
+    justify-content: space-evenly;
+}
+
+.card-visi h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--bs-yellow);
+    border-bottom: 2px solid #EDEDED;
+}
+
+.card-visi p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card-misi h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--bs-yellow);
+    border-bottom: 2px solid #EDEDED;
+}
+
+.card-misi p {
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    height: 8vh;
+    padding: 15px 0;
+    background-color: #1cc88a;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+h3,h4{
+    color: white;
+    text-align: center;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
